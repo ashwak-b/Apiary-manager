@@ -88,7 +88,7 @@ Example error response:
 2. Log in to MySQL and create the database:
    ```sql
    CREATE DATABASE apiary_db;
-```
+   ```
 3. Set environment variables `DB_USERNAME` and `DB_PASSWORD` (defaults: `apiary_user` / `change_me`).
 4. Run `ApiaryManagerApplication` from Spring Tools, or `./mvnw spring-boot:run`.
 5. The API is available at `http://localhost:8082`. Tables are created automatically (`ddl-auto=update`).
