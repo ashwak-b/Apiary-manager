@@ -85,14 +85,13 @@ Example error response:
 
 ## How to run
 1. Install Java 21+ and MySQL.
-2. Create the database and user:
+2. Log in to MySQL and create the database:
    ```sql
    CREATE DATABASE apiary_db;
-   CREATE USER 'apiary_user'@'localhost' IDENTIFIED BY 'your_password';
-   GRANT ALL PRIVILEGES ON apiary_db.* TO 'apiary_user'@'localhost';
    ```
 3. Set environment variables `DB_USERNAME` and `DB_PASSWORD` (defaults: `apiary_user` / `change_me`).
 4. Run `ApiaryManagerApplication` from Spring Tools, or `./mvnw spring-boot:run`.
 5. The API is available at `http://localhost:8082`. Tables are created automatically (`ddl-auto=update`).
 
 ## Testing with Postman
+Screenshots of successful tests are in `docs/postman/`.
